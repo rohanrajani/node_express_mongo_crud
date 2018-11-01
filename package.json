@@ -1,0 +1,26 @@
+{
+  "name": "node_express_mongo_crud",
+  "version": "1.0.0",
+  "description": "Basic CRUD operations with node, express and mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohanrajani/node_express_mongo_crud.git"
+  },
+  "author": "Rohan Rajani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohanrajani/node_express_mongo_crud/issues"
+  },
+  "homepage": "https://github.com/rohanrajani/node_express_mongo_crud#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "config": "^2.0.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.8"
+  }
+}

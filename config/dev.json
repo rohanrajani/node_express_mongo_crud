@@ -1,0 +1,5 @@
+{
+    "mongo":{
+        "mlib_url":"mongodb://rpr:demo123@ds243335.mlab.com:43335/immers"
+    }
+}
