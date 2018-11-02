@@ -22,6 +22,49 @@ var createUser = async(req,res) => {
       })
 }
 
+var getAllUsers = async(req,res,next)=>{
+    User.find()
+    .select("name user _id email")
+    .exec().then(data=>{
+        var returnData={
+            count: data.length,
+            users: data.map(dt=>{
+                return {
+                    _id: dt._id,
+                    name: dt.name,
+                    user: dt.user,
+                    email: dt.email
+                }
+            })
+        }
+        res.status(200).json(returnData);
+
+    })
+}
+
+var getUserByEmail = async(req,res,next)=>{
+    var email_id=req.params.email
+    User.find({email:email_id})
+    .select("name user _id email")
+    .exec().then(data=>{
+        var returnData={
+            count: data.length,
+            users: data.map(dt=>{
+                return {
+                    _id: dt._id,
+                    name: dt.name,
+                    user: dt.user,
+                    email: dt.email
+                }
+            })
+        }
+        res.status(200).json(returnData);
+
+    })
+}
+
 module.exports = {
-    createUser
+    createUser,
+    getAllUsers,
+    getUserByEmail
 }
