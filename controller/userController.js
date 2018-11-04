@@ -63,8 +63,32 @@ var getUserByEmail = async(req,res,next)=>{
     })
 }
 
+var updateUser= async(req,res) => {
+    const id = req.params.userId;
+    User.findByIdAndUpdate({ _id: id },req.body )
+    .exec()
+    .then(result => {
+      res.status(200).json({
+          message: 'User updated successfully'
+      });
+    });
+}
+
+var deleteUser= async(req,res) => {
+    const id = req.params.userId;
+    User.findOneAndDelete({ _id: id })
+    .exec()
+    .then(result => {
+      res.status(200).json({
+          message: 'User deleted successfully'
+      });
+    });
+}
+
 module.exports = {
     createUser,
     getAllUsers,
-    getUserByEmail
+    getUserByEmail,
+    updateUser,
+    deleteUser
 }

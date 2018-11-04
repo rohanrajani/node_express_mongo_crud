@@ -14,4 +14,12 @@ router.get('/getuser/:email', async(req,res) =>{
     userConreoller.getUserByEmail(req,res)
 })
 
+router.patch('/updateuser/:userId', async(req,res) =>{
+    userConreoller.updateUser(req,res)
+})
+
+router.delete('/deleteuser/:userId', async(req,res) =>{
+    userConreoller.deleteUser(req,res)
+})
+
 module.exports = router
