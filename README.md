@@ -5,35 +5,35 @@ To getting start with **MEN**(Mongo-Express-Node) **CURD**(Create-Update-Read-De
 
 # How To Run?
 
-(1) Clone this git repo to the system
-(2) Run command `npm install` to the project root directory
-(3) Run command `npm start` to the project root directory
+(1) Clone this git repo to the system<br />
+(2) Run command `npm install` to the project root directory<br />
+(3) Run command `npm start` to the project root directory<br />
 
 Bingo!! Your project is up on "**http://localhost:9999**"
 
 # API end-points
 
-(1) Create User:
-    URL: *base_url/user/addUser*
-    Request Type: *POST*
-    Params: *name,user,email*
+(1) Create User:<br />
+    URL: *base_url/user/addUser*<br />
+    Request Type: *POST*<br />
+    Params: *name,user,email*<br />
 
-(2) Get All Users:
-    URL: *base_url/user/getuser/all*
-    Request Type: *GET*
+(2) Get All Users:<br />
+    URL: *base_url/user/getuser/all*<br />
+    Request Type: *GET*<br />
 
-(3) Get User By Email:
-    URL: *base_url/user/getuser/:email*
-    Request Type: *GET*
+(3) Get User By Email:<br />
+    URL: *base_url/user/getuser/:email* <br />
+    Request Type: *GET* <br />
 
-(4) Update User:
-    URL: *base_url/user/updateuser/:userId*
-    Request Type: *PATCH*
-    Params: *name,user,email*
+(4) Update User:<br />
+    URL: *base_url/user/updateuser/:userId* <br />
+    Request Type: *PATCH* <br />
+    Params: *name,user,email* <br />
 
-(5) Delete User:
-    URL: *base_url/user/deleteuser/:userId*
-    Request Type: *DELETE*
+(5) Delete User: <br />
+    URL: *base_url/user/deleteuser/:userId* <br />
+    Request Type: *DELETE* <br />
 
 Enjoy Coding!
 
